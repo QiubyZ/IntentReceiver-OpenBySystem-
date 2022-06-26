@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="qz.receiver" >
+
+    <!-- Perizinan untuk Membaca Storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Application" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- <category android:name="android.intent.category.OPENABLE" /> -->
+
+                <!-- Fungsi Default Wajib dipakai -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!-- Fitur SEND, digunakan ketika memunculkan .MainActivity di fitur share file -->
+                <action android:name="android.intent.action.SEND" />
+
+                <!-- Fitur View digunakan untuk muncul .MainActivity di fitur Open By System -->
+                <action android:name="android.intent.action.VIEW" />
+                
+                <!-- MimeType Digunakan Untuk memfilter ekstensi data yang akan masuk di .MainActivity. tp disini saya menerima semua jenis data */* -->
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
