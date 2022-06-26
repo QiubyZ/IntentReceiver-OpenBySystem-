@@ -16,7 +16,6 @@ import java.io.BufferedReader;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import qz.receiver.MyReceiver;
 import qz.receiver.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
