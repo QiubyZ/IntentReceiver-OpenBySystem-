@@ -24,7 +24,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build debug Apk
-      run: bash ./gradlew assembleDebug --stacktrace
+      run: bash ./gradlew assembleDebug --warning-mode all
 
     - name: Upload Ke dalam Artifact
       uses: actions/upload-artifact@v1
