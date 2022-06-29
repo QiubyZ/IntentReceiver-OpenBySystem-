@@ -19,15 +19,14 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-                <!-- <category android:name="android.intent.category.OPENABLE" /> -->
 
-                <!-- Fungsi Default Wajib dipakai -->
+                <!-- Fungsi Category Default Wajib dipakai -->
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <!-- Fitur SEND, digunakan ketika memunculkan .MainActivity di fitur share file -->
+                <!-- Fitur Action SEND, digunakan ketika memunculkan .MainActivity di fitur share file Content URI-->
                 <action android:name="android.intent.action.SEND" />
 
-                <!-- Fitur View digunakan untuk muncul .MainActivity di fitur Open By System -->
+                <!-- Fitur Action View digunakan untuk memuncul .MainActivity di fitur Open By System -->
                 <action android:name="android.intent.action.VIEW" />
                 
                 <!-- MimeType Digunakan Untuk memfilter ekstensi data yang akan masuk di .MainActivity. tp disini saya menerima semua jenis data */* -->
